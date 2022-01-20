@@ -1,0 +1,28 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.content {
+    width: 900px;
+    margin: 1em auto;
+    background-color: green;
+}
+.clearfix::after {
+    content: '';
+    display: table;
+    clear: both;
+}
+
+.blocco {
+    width: calc((100% - 2em) / 3);
+    float: left;
+    height: 350px;
+    background-color: yellow;
+    margin-bottom: 1em;
+}
+
+.centrale {
+    background-color: red;
+    margin: 0 1em;
+}
