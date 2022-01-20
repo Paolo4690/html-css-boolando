@@ -39,38 +39,36 @@ body {
     margin: 0 1em;
 }
 
-.blocco img {
+.blocco .sect-img  img {
     width: 100%;
 }
 
-.img-standard {
+.blocco .sect-img .img-standard {
     position: absolute;
     top: 0;
     left: 0;
     z-index: 2;
 }
 
-.img-hov {
+.blocco .sect-img .img-hov {
     position: absolute;
     top: 0;
     left: 0;
     z-index: 1;
 }
 
-.cuore {
+.blocco .sect-img .cuore {
     background-color: white;
     position: absolute;
     top: 5%;
     right: 0;
     z-index: 4;
     width: 1.5em;
-    height: 1.5em;
-    font-size: 1em;
     line-height: 1.5em;
     text-align: center;
 }
 
-.plus {
+.blocco .sect-img .plus {
     position: absolute;
     top: 330px;
     left: 0;
@@ -78,18 +76,17 @@ body {
 }
 
 .plus span {
-    display: inline-block; 
     font-size: .6rem;
     padding: .2rem .3rem;
     color: white;
     font-weight: bold;
 } 
 
-.back-red {
+.plus span.back-red {
     background-color: red;
 }
 
-.back-green {
+.plus span.back-green {
     background-color: green;
 }
 
