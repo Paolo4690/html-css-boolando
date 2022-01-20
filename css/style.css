@@ -19,6 +19,18 @@ body {
     clear: both;
 }
 
+a {
+    color: #000;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+a:visited {
+    color: #000;
+}
+
 .blocco {
     width: calc((100% - 2em) / 3);
     float: left;
