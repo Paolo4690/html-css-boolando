@@ -3,11 +3,16 @@
     padding: 0;
     box-sizing: border-box;
 }
-.content {
-    width: 900px;
-    margin: 1em auto;
-    background-color: green;
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
 }
+
+.content {
+    width: 800px;
+    margin: 1em auto;
+}
+
 .clearfix::after {
     content: '';
     display: table;
@@ -17,12 +22,94 @@
 .blocco {
     width: calc((100% - 2em) / 3);
     float: left;
-    height: 350px;
-    background-color: yellow;
     margin-bottom: 1em;
 }
 
+.blocco .sect-img {
+    position: relative;
+    height: 370px;
+
+}
+
+.blocco:hover .img-standard {
+    z-index: 0;
+}
+
 .centrale {
-    background-color: red;
     margin: 0 1em;
+}
+
+.blocco img {
+    width: 100%;
+}
+
+.img-standard {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+}
+
+.img-hov {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.cuore {
+    background-color: white;
+    position: absolute;
+    top: 5%;
+    right: 0;
+    z-index: 4;
+    width: 1.5em;
+    height: 1.5em;
+    font-size: 1em;
+    line-height: 1.5em;
+    text-align: center;
+}
+
+.plus {
+    position: absolute;
+    top: 330px;
+    left: 0;
+    z-index: 4;
+}
+
+.plus span {
+    display: inline-block; 
+    font-size: .6rem;
+    padding: .2rem .3rem;
+    color: white;
+    font-weight: bold;
+} 
+
+.back-red {
+    background-color: red;
+}
+
+.back-green {
+    background-color: green;
+}
+
+.sect-txt span {
+    font-size: .7em;
+    vertical-align: top;
+}
+
+.sect-txt span:first-child {
+    vertical-align: bottom;
+}
+
+.sect-txt h1 {
+    font-size: .9em;
+}
+
+span.txt-red {
+    color: red;
+    font-weight: bold;
+}
+span.line {
+    text-decoration: line-through;
 }
