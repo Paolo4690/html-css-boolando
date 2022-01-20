@@ -35,6 +35,10 @@ body {
     z-index: 0;
 }
 
+.blocco:hover .cuore {
+    color: red;
+}
+
 .centrale {
     margin: 0 1em;
 }
@@ -43,7 +47,7 @@ body {
     width: 100%;
 }
 
-.blocco .sect-img .img-standard {
+.sect-img .img-standard {
     position: absolute;
     top: 0;
     left: 0;
